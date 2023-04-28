@@ -24,7 +24,7 @@ resource "null_resource" "copy_license" {
 # Change mode license.key
   provisioner "remote-exec" {
     inline = [
-      "sudo chmod 0600 /etc/license.key"
+      "chmod 0600 /etc/license.key"
     ]
   }
 }
